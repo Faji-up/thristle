@@ -1,0 +1,489 @@
+:root {
+    --box-shadow: 0 2px 8px 4px rgba(0,0,0,0.15);
+    --off-black: #212121;
+    --red: #C82F31;
+    --font: 'Merriweather', serif;
+}
+
+/* Utility Classes */
+
+.btn {
+    background-color: var(--off-black);
+    color: #fff;
+    transition: background-color 0.4s ease;
+}
+
+.btn:hover {
+    background-color: var(--red);
+    color: #fff;
+}
+
+/* Typography */
+
+a {
+    text-decoration: none;
+}
+
+a:hover:not([class]) {
+    text-decoration: underline;
+}
+
+/* Universal Styles */
+
+body {
+    color: var(--off-black);
+    line-height: 1.5;
+}
+/* COLOUR PALETTE
+    dark    #333;
+    navy    #37384c;
+    creme   #e9dccc;
+*/
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Utility Classes */
+
+.container {
+    max-width: 1200px;
+    margin: 0 ;
+}
+
+.container:not(.menu) {
+    padding: 3rem 1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.menu{
+    background-color: white;
+    width: 100%;
+    height: 34px;
+    text-align: center;
+    align-items: center;
+    padding-left: 70px;
+    
+}
+.menu .title{
+    font-size: 1.6rem;
+}
+.menu .icons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 20%;
+    margin-right: -25px;
+}
+.menu .icons img{
+   width: 20px;
+    
+}
+.menu .icons div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.shop-con{
+    position: absolute;
+    background-color: white;
+    border-radius: 2px;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 20px;
+    line-height: 25px;
+    display: none;
+}
+.burger{
+    display: none;
+}
+.navs{
+    width: 40%;
+}
+/* Typographic Styles */
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+/* Navigation */
+
+nav {
+    padding: 0.5rem;
+}
+
+nav .container > div {
+    align-items: center;
+}
+
+
+nav ul{
+    display: flex;
+    column-gap: 10px;
+    width: 30%;
+}
+nav ul li {
+    align-items: center;
+    display: flex;
+}
+
+nav ul li a {
+    color: #37384c;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Banner */
+
+header section {
+    background-image: url('../img/hero-banner-lady.webp');
+    background-position: top;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    text-shadow: 2px 2px 2px #333;
+    padding-left: 60px;
+    height: 1000px;
+}
+
+header section div.flex {
+    display: flex;
+    align-items:flex-start;
+    flex-flow: column wrap;
+    height: calc(100vh - 5rem);
+    justify-content: center;
+}
+header section div.flex a{
+    color: white;
+    font-style: none;
+    background-color: black;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+    border-radius: 5px;
+}
+header section h2 {
+    font-size: 4rem;
+    letter-spacing: 1px;
+    width: 40%;
+    text-align: left;
+}
+
+header section p {
+    font-size: 1.5rem;
+}
+
+/* Main Content */
+
+main img {
+    width:180px;
+    height: 190px;
+}
+
+/* Menu */
+
+main section:nth-child(2) {
+    background-color: #37384c;
+    color: #fff;
+}
+.cards{
+    width: 49%;  
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card{
+    border: 1px black solid;
+    width: 180px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    
+}
+
+.card.top{
+    transform: translate(0px,-20px);
+}
+.card.mid{
+    transform: translate(-100px,50px);
+}
+.card.bottom{
+    transform: translate(-200px,120px);
+   
+}
+.card-name h3:first-child {
+   
+    font-size: 1rem;
+}
+.menu-item h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.card-name{
+    margin: 0%;
+    width: 100%;
+    align-items: flex-start;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px ;
+}
+.menu-contents a{
+    color: white;
+    font-style: none;
+    text-decoration: none;
+    background-color: black;
+    padding: 7px 30px;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+    margin-top: 100px;
+   
+}
+
+
+.menu-sec{
+    padding: 80px 80px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 200px;
+    height: auto !important;
+    
+    
+}
+
+/* Location */
+
+main section:last-child .flex {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+main section:last-child h3 {
+    padding: 2rem 0 1rem 0;
+}
+
+
+/* About */
+.tartan{
+    background-color: hsl(0, 0%, 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.about-text{
+    width: 49%;
+    padding: 60px 60px;
+    text-align: left;
+}
+.about-text  h2{
+    font-size: 2.5rem;
+}
+.about-text  p{
+    font-size: 1.1rem;
+}
+.about-text p{
+    width: 380px;
+    text-align: justify;
+}
+.about-img{
+   
+    width: 50%;
+    
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+}
+.about-text a{
+    color: black;
+    font-style: none;
+    background-color: white;
+    padding: 7px 30px;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+    margin-top: 50px;
+    
+}
+
+/* Celebrate section */
+
+
+.celeb{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+.celeb-header{
+    text-align: justify;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 20px;
+   
+    
+}
+.celeb-header h3{
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0%;
+    padding: 0%;
+}
+.celeb-header p{
+    width: 30%;
+}
+
+
+.celeb-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    column-gap: 30px;
+
+}
+
+.celeb-card .package-name{
+    width: 100%;
+    background-color: hsl(0, 3%, 7%);
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    
+}
+
+.celeb-card {
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    border: 1px hsla(0, 0%, 76%, 0.974) solid;
+    padding-bottom: 20px;
+}
+
+.celeb-contents h3{
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.celeb-contents{
+    padding: 10px 20px;
+}
+.celeb-contents p:last-child{
+    margin-top: 10px;
+}
+
+.celeb-card .last{
+    border-top: 1px hsla(0, 0%, 76%, 0.974) solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 4px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.celeb-card a{
+    color: white;
+    font-style: none;
+    background-color: black;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+    
+    
+}
+
+
+.celeb-card .mid{
+    height: auto;
+    
+}
+.celeb-card .side{
+    height: auto;
+}
+/* Footer */
+
+footer {
+    background-color: black;
+    color:white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer-head{
+    border-bottom: 1px white solid;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.footer-head h3{
+    font-size: 2rem;
+    font-family:var(--font);
+}
+.footer-head p{
+    width: 20%;
+    font-style: italic;
+    color: hsla(0, 0%, 100%, 0.7);
+}
+
+.footer-btm{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.fot-row{
+    text-align: left;
+}
+.fot-row span{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
